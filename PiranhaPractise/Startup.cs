@@ -61,6 +61,10 @@ namespace PiranhaPractise
             // Configure cache level
             App.CacheLevel = Piranha.Cache.CacheLevel.Basic;
 
+            // Registering The Blocks
+
+            App.Blocks.Register<HomeBlock>();
+
             // Build content types
             new ContentTypeBuilder(api)
                 .AddAssembly(typeof(Startup).Assembly)
@@ -71,7 +75,8 @@ namespace PiranhaPractise
             EditorConfig.FromFile("editorconfig.json");
 
             // Middleware setup
-            app.UsePiranha(options => {
+            app.UsePiranha(options =>
+            {
                 options.UseManager();
                 options.UseTinyMCE();
                 options.UseIdentity();

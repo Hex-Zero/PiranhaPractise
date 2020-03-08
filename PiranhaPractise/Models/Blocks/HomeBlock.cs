@@ -1,11 +1,15 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+﻿using Piranha.Extend;
+using Piranha.Extend.Fields;
+using Piranha.Models;
 
-namespace PiranhaPractise.Models.Blocks
+[BlockType(Name = "Home", Category = "Content",
+    Icon = "fas fa-quote-right", Component = "quote-block")]
+public class HomeBlock : Block
 {
-    public class HomeBlock
-    {
-    }
+    /// <summary>
+    /// Gets/sets the text body.
+    /// </summary>
+    [Field(Options = FieldOption.HalfWidth)]
+    public StringField SubTitle { get; set; }
+
 }
