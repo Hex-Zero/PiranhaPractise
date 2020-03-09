@@ -2,14 +2,20 @@
 using Piranha.Extend.Fields;
 using Piranha.Models;
 
-[BlockType(Name = "Home", Category = "Content",
-    Icon = "fas fa-quote-right", Component = "quote-block")]
-public class HomeBlock : Block
+namespace PiranhaPractise.Models.Blocks
 {
-    /// <summary>
-    /// Gets/sets the text body.
-    /// </summary>
-    [Field(Options = FieldOption.HalfWidth)]
-    public StringField SubTitle { get; set; }
+    [BlockType(Name = "Home", Category = "Content",
+        Icon = "fas fa-quote-right")]
+    public class HomeBlock : Block
+    {
+        /// <summary>
+        /// Gets/sets the text body.
+        /// </summary>
+        [Field(Options = FieldOption.HalfWidth)]
+        public StringField Title { get; set; }
 
+        [Field(Options = FieldOption.HalfWidth)]
+        public StringField SubTitle { get; set; }
+
+    }
 }

@@ -9,6 +9,7 @@ using Piranha.AspNetCore.Identity.SQLite;
 using Piranha.AttributeBuilder;
 using Piranha.Data.EF.SQLite;
 using Piranha.Manager.Editor;
+using PiranhaPractise.Models.Blocks;
 
 namespace PiranhaPractise
 {
@@ -61,15 +62,19 @@ namespace PiranhaPractise
             // Configure cache level
             App.CacheLevel = Piranha.Cache.CacheLevel.Basic;
 
-            // Registering The Blocks
 
-            App.Blocks.Register<HomeBlock>();
 
             // Build content types
             new ContentTypeBuilder(api)
                 .AddAssembly(typeof(Startup).Assembly)
                 .Build()
                 .DeleteOrphans();
+
+
+
+            // Registering The Blocks
+            App.Blocks.Register<HomeBlock>();
+
 
             // Configure Tiny MCE
             EditorConfig.FromFile("editorconfig.json");
