@@ -9,6 +9,7 @@ using Piranha.AspNetCore.Identity.SQLite;
 using Piranha.AttributeBuilder;
 using Piranha.Data.EF.SQLite;
 using Piranha.Manager.Editor;
+using PiranhaPractise.Models.BlockGroups;
 using PiranhaPractise.Models.Blocks;
 
 namespace PiranhaPractise
@@ -74,6 +75,9 @@ namespace PiranhaPractise
 
             // Registering The Blocks
             App.Blocks.Register<HomeBlock>();
+
+            // Registering The BlockGroups
+            App.Blocks.Register<Core>();
 
 
             // Configure Tiny MCE
