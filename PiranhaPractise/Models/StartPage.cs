@@ -19,7 +19,7 @@ namespace PiranhaPractise.Models
         /// <summary>
         /// Gets/sets the available teasers.
         /// </summary>
-        [Region(ListTitle = "Title")]
+        [Region(ListTitle = "TeaserTitle")]
         public IList<Teaser> Teasers { get; set; }
 
         /// <summary>
