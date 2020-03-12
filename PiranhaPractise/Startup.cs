@@ -42,6 +42,8 @@ namespace PiranhaPractise
                 options.UseManager();
                 options.UseTinyMCE();
                 options.UseMemoryCache();
+                options.AddRazorRuntimeCompilation = true;
+
                 options.UseEF<SQLiteDb>(db =>
                     db.UseSqlite(Configuration.GetConnectionString("piranha")));
                 options.UseIdentityWithSeed<IdentitySQLiteDb>(db =>
@@ -55,6 +57,7 @@ namespace PiranhaPractise
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
+                app.UseBrowserLink();
             }
 
             // Initialize Piranha
