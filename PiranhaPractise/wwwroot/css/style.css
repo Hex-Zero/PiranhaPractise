@@ -1,7 +1,9 @@
 ﻿.header-bg {
   background-size: cover;
   background-position: 50% 50%; }
-
+body{
+    background: rgba(161, 39, 209, 0.34);
+}
 header {
   padding: 1rem 0; }
   header h1 + .lead {
@@ -68,7 +70,7 @@ header {
       float: right; }
 
 .nav-site li a {
-  color: #fff;
+  color: #f00;
   padding: 0;
   margin: 1em 1em;
   font-size: .9rem;
