@@ -172,7 +172,7 @@ header {
     }
 
 .archive-item h2 a {
-    color: #f00;
+    color: #000;
     transition: color ease-in-out .15s;
 }
 
