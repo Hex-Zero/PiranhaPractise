@@ -36,10 +36,11 @@ namespace PiranhaPractise.Models.Regions
         /// <summary>
         /// Gets/sets the main body.
         /// </summary>
-        [Field]
+        [Field(Title = "Body")]
         public HtmlField Body { get; set; }
 
-        public Teaser() {
+        public Teaser()
+        {
             PageLink = new PageField();
             PostLink = new PostField();
         }
