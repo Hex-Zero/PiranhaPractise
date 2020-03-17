@@ -66,15 +66,11 @@ namespace PiranhaPractise
             // Configure cache level
             App.CacheLevel = Piranha.Cache.CacheLevel.Basic;
 
-
-
             // Build content types
             new ContentTypeBuilder(api)
                 .AddAssembly(typeof(Startup).Assembly)
                 .Build()
                 .DeleteOrphans();
-
-
 
             // Registering The Blocks
             App.Blocks.Register<HomeBlock>();
