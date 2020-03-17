@@ -21,6 +21,9 @@ namespace PiranhaPractise.Models.Regions
         [Field(Options = FieldOption.HalfWidth)]
         public StringField SubTitle { get; set; }
 
+        [Field(Options = FieldOption.HalfWidth)]
+        public StringField Description { get; set; }
+
         /// <summary>
         /// Gets/sets the optional page link.
         /// </summary>
