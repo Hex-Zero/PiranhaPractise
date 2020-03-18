@@ -24,11 +24,6 @@ namespace PiranhaPractise.Models.Regions
         [Field(Options = FieldOption.HalfWidth)]
         public StringField Description { get; set; }
 
-        /// <summary>
-        /// Gets/sets the optional page link.
-        /// </summary>
-        [Field(Title = "Optional Page link")]
-        public PageField PageLink { get; set; }
 
         /// <summary>
         /// Gets/sets the optional post link.
