@@ -8,9 +8,6 @@ namespace PiranhaPractise.Models.Blocks
         Icon = "fas fa-quote-right")]
     public class HomeBlock : Block
     {
-        /// <summary>
-        /// Gets/sets the text body.
-        /// </summary>
         [Field(Options = FieldOption.HalfWidth)]
         public StringField Title { get; set; }
 
