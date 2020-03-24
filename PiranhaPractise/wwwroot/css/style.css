@@ -4,7 +4,7 @@
 }
 
 body {
-    background: rgba(161, 39, 209, 0.34);
+    background: #f6f6f6;
 }
 
 header {
@@ -89,7 +89,7 @@ body {
 }
 
 header {
-    color: #fff;
+    color: #000;
 }
 
     header.site-header {
