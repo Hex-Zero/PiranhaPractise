@@ -42,7 +42,6 @@ namespace PiranhaPractise
                 options.UseManager();
                 options.UseTinyMCE();
                 options.UseMemoryCache();
-                options.AddRazorRuntimeCompilation = true;
 
                 options.UseEF<SQLiteDb>(db =>
                     db.UseSqlite(Configuration.GetConnectionString("piranha")));
